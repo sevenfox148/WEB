@@ -1,0 +1,116 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    display: flex; /* Встановлюємо flex контейнер для всієї сторінки */
+    flex-direction: column; /* Встановлюємо вертикальну орієнтацію для блоків */
+    overflow-y: auto;
+}
+.logo{
+    width: 50%;
+    float: left;
+    margin-top: 1%; 
+    margin-left: 5%;
+    font-size: large;
+    font-weight: bolder;
+}
+.label{
+    font-weight: bolder;
+    width: 10%;
+    background-color: #334234;
+    float: right;
+    border-radius: 10px 0 10px 0;
+    margin-right: 5%;
+    margin-top: 2%;
+    padding: 15px;
+    color:white;
+}
+.contacts{
+    color:white;
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 60%;
+    float: left;
+    word-spacing: 10em;
+}
+.header{
+    background-color: #252E26;
+    min-height:15%;
+    width: 100%; 
+    color:white;
+   
+}
+.footer{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #252E26;
+    min-height:15%;
+    width: 100%; 
+    color:white;
+}
+.left_panel{
+    background-color: #7DCC85;
+    float: left;
+    width: 80%;
+    /*min-height: 100%;*/
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.right_panel{
+    color: white;
+    background-color: #39733E;
+    float: right;
+    width: 20%;
+    /*min-height: 100%;*/
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.bottom_left{
+    background-color: #76BF7D;
+    min-height: 10%;
+    width: 100%;
+    line-height: 3;
+    text-indent: 5em;
+    font-style: italic;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+}
+.menu_panel{
+    display: grid;
+    place-items: center;
+    color: white;
+    float: left;
+    background-color: #39733E;
+    min-height: 100%;
+    width: 25%;
+    line-height: 3;
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+}
+.top_center{
+    background-color: #76BF7D;
+    min-height: 10%;
+    float: right;
+    width: 75%;
+    text-align: center;
+    font-size: xx-large;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.page_content{
+    font-size: medium;
+    
+}
