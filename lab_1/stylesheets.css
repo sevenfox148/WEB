@@ -14,9 +14,6 @@ html, body {
 
 .logo{
     width: 50%;
-    float: left;
-    margin-top: 1%; 
-    margin-left: 5%;
     font-size: large;
     font-weight: bolder;
 }
@@ -24,22 +21,20 @@ html, body {
     font-weight: bolder;
     width: 10%;
     background-color: #334234;
-    float: right;
     border-radius: 10px 0 10px 0;
-    margin-right: 5%;
-    margin-top: 2%;
     padding: 15px;
     color:white;
 }
 .contacts{
     color:white;
-    margin-top: 2%;
-    margin-left: 5%;
     width: 60%;
     float: left;
     word-spacing: 10em;
 }
 .header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #252E26;
     flex-grow: 2;
     width: 100%; 
@@ -47,12 +42,13 @@ html, body {
    
 }
 .footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #252E26; 
     flex-grow: 2;
     width: 100%; 
     color:white;
-    display: inline-block;
-    margin-right: 10px;
 }
 .center{
     background-color: #7DCC85;
@@ -134,4 +130,8 @@ html, body {
     justify-items: center;
     align-items: center; 
     text-align: justify;
+}
+img {
+    max-width: 90%; 
+    height: auto; 
 }
