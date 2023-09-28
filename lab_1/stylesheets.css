@@ -38,7 +38,6 @@ html, body {
     justify-content: space-around;
     align-items: center;
     background-color: #252E26;
-    flex-grow: 2;
     width: 100%; 
     color:white; 
 }
