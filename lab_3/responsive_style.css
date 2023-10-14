@@ -163,10 +163,7 @@ hr{
     height: 3px;
     border: none;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-<<<<<<< HEAD
 @media screen and (max-width: 800px) {
     .page{
 
@@ -189,9 +186,6 @@ hr{
 }
 
 @media screen and (max-width: 480px) {
-=======
-@media only screen and (max-width: 768px) {
->>>>>>> a599d5431c52a164271004c3ffc06eeea990d878
     .page{
 
         grid-template-columns: 100%;
@@ -213,7 +207,3 @@ hr{
         padding: 2%;
     }
 }
-=======
->>>>>>> b3e66af4155b8dde436929d17ef39fe8217b1c58
-=======
->>>>>>> b3e66af4155b8dde436929d17ef39fe8217b1c58
