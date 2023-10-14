@@ -19,7 +19,9 @@ html, body {
 }
 .label{
     font-weight: bolder;
-    width: 10%;
+    width: fit-content;
+    max-width: 20%; 
+    justify-self: end;
     background-color: #334234;
     border-radius: 10px 0 10px 0;
     padding: 15px;
@@ -35,6 +37,7 @@ html, body {
 .header{
     padding: 1%;
     display: flex;
+    flex-grow: 1;
     justify-content: space-around;
     align-items: center;
     background-color: #252E26;
@@ -44,6 +47,7 @@ html, body {
 .footer{
     padding: 1%;
     display: flex;
+    flex-grow: 1;
     justify-content: space-around;
     align-items: center;
     background-color: #252E26; 
