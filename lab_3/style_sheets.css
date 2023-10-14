@@ -30,7 +30,7 @@ html, body {
     font-size: large;
     font-weight: bolder;
 
-    grid-column: 2/6;
+    grid-column: 2/14;
 }
 
 .label{
@@ -38,17 +38,17 @@ html, body {
     background-color: #334234;
     border-radius: 10px 0 10px 0;
     padding: 15px;
-    color:white;
-    display: inline-block;
-
-    grid-column: 9/10;
+    color: white;
+    grid-column: 15/20;
+    width: fit-content; 
+    justify-self: end;
 }
 
 .contacts{
     color:white;
     word-spacing: 10em;
 
-    grid-column: 2/7;
+    grid-column: 2/14;
 }
 
 header{
@@ -59,7 +59,7 @@ header{
     grid-area: header;
 
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(20, 1fr);
     align-items: center;
 }
 
@@ -71,7 +71,7 @@ footer{
     grid-area: footer;
 
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(20, 1fr);
     align-items: center;
 }
 
@@ -162,4 +162,48 @@ hr{
     background-color: #76BF7D;
     height: 3px;
     border: none;
+}
+
+@media screen and (max-width: 800px) {
+    .page{
+
+        grid-template-columns: 20% 25% 55%;
+        grid-template-rows: minmax(20vh, auto)  minmax(5vh, auto) 1fr  minmax(20vh, auto) minmax(20vh, auto);
+
+        grid-template-areas: 
+        "header header header"
+        "menu title title"
+        "menu main main"
+        "slogan slogan right-panel"
+        "footer footer footer";
+    }
+    .label{
+        grid-column: 7/10;
+    }
+    .right_panel{
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page{
+
+        grid-template-columns: 100%;
+        grid-template-rows: minmax(20vh, auto) minmax(20vh, auto) minmax(5vh, auto) 1fr minmax(5vh, auto) minmax(20vh, auto) minmax(20vh, auto);
+
+        grid-template-areas: 
+        "header"
+        "menu"
+        "title"
+        "main"
+        "slogan"
+        "right-panel"
+        "footer";
+    }
+    .label{
+        grid-column: 7/10;
+    }
+    .right_panel{
+        padding: 2%;
+    }
 }
