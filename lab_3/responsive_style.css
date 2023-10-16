@@ -177,9 +177,7 @@ hr{
         "slogan slogan right-panel"
         "footer footer footer";
     }
-    .label{
-        grid-column: 7/10;
-    }
+    
     .right_panel{
         padding: 2%;
     }
@@ -199,9 +197,6 @@ hr{
         "slogan"
         "right-panel"
         "footer";
-    }
-    .label{
-        grid-column: 7/10;
     }
     .right_panel{
         padding: 2%;
