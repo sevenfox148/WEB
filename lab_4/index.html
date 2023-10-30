@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="keywords" content = "Portfolio, photographer, photo, photography">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body><div class="page">
+        <header>
+            
+            <img src="camera.png" alt="logo">
+            <div></div>
+            <ul>
+                <li><a class="active" href="https://sevenfox148.github.io/WEB/lab_4">HOME</a></li>
+                <li><a href="https://youtu.be/dQw4w9WgXcQ?si=ZEmJBNh81Z3p1ld8">Page 1</a></li> 
+                <li><a href="https://uk.wikipedia.org/wiki/%D0%A9%D0%B5%D0%BD%D1%8F%D1%87%D0%B8%D0%B9_%D0%BF%D0%B0%D1%82%D1%80%D1%83%D0%BB%D1%8C">Page 2</a></li> 
+                <li><a href="https://projects.raspberrypi.org/en/pathways/pico-intro">Page 3</a></li> 
+            </ul>
+            <div class="navigation">
+                <input type="checkbox" id="check">
+                <label for="check" class="navbutton">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </header>
+        <div class="main">
+            <div class="title">
+                <h1>Professional photographer</h1>
+                <img src="dots.png">
+            </div>
+            <div class="card_container">
+                <div><h4>Skills Lorem100</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsa accusantium necessitatibus obcaecati vitae ut quam tempora commodi delectus consequuntur sunt quaerat libero rem, quas corporis fuga eveniet praesentium dignissimos, ratione ad. Quos, dignissimos nobis!</p></div>
+                <div><h4>Experience</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ratione nemo pariatur? Tempora quisquam quae, dicta eos ex nulla blanditiis magni cupiditate eius officia dolorum consequuntur quis, nisi tenetur sit ea eaque quia sed recusandae soluta maiores? Repellendus, eligendi et.</p></div>
+                <div><h4>Education</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta, non perspiciatis hic at blanditiis? Odio numquam esse modi delectus quos blanditiis earum nemo eligendi omnis! Labore.</p></div>
+            </div>
+            <div class="photo">
+                <img src="my_photo.png" alt="summer">
+            </div>
+        </div>
+        <footer>
+            <p style="text-decoration: overline;">CONTACTS</p>
+            <p>@cool_photographer</p>
+            <p>cool_photographer@gmail.com</p>
+            <p>050-065-75-66</p>
+        </footer>
+    </div>
+    <script>
+        const checkbox = document.getElementById("check");
+        const headerUl = document.querySelector("header ul");
+
+        checkbox.addEventListener("change", function () {
+            if (this.checked) {
+                headerUl.style.left = "0";
+            } else {
+                headerUl.style.left = "-100%";
+            }
+        });
+    </script>
+    </body>
+<html>
