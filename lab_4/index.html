@@ -55,12 +55,15 @@
     <script>
         const checkbox = document.getElementById("check");
         const headerUl = document.querySelector("header ul");
-
+        const body = document.querySelector("body");
+    
         checkbox.addEventListener("change", function () {
             if (this.checked) {
                 headerUl.style.left = "0";
+                body.style.overflowY = "hidden";
             } else {
                 headerUl.style.left = "-100%";
+                body.style.overflowY = "auto";
             }
         });
     </script>
