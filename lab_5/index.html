@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="keywords" content = "Sky Park, Мотузковий парк, Скай парк, відпочинок, скеледром, мотузкові траси">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sky Park Виноградар</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="responsive_style.css">
+        <script src="script.js"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body><div class="page">
+        <header>  
+            <div class="logo">
+                <img src="carabiner.png" alt="Logo" height="40" width="40">
+                Sky Park
+            </div>
+            <div class="label" id="top_label" style="text-align: center;">Працюємо для вас 7 років</div>
+        </header>
+        <div class="menu">
+            <p style="text-decoration:overline;">ГОЛОВНА</p>
+            <p><a href="https://sevenfox148.github.io/WEB/lab_3/tracks.html">ВИСОКІ ТРАСИ</a></p>
+            <p><a href="https://sevenfox148.github.io/WEB/lab_3/discounts.html">ЗНИЖКИ</a></p>
+            
+        </div>
+        <div class="title" id="title">головна</div>
+        <div class="content" id="content">
+            <h3>Завдання 2</h3>
+            <div class="input_trapezoid">
+                <label for="base1">Основа 1:</label>
+                <input type="number" id="base1" placeholder="Введіть довжину основи 1">
+            
+                <label for="base2">Основа 2:</label>
+                <input type="number" id="base2" placeholder="Введіть довжину основи 2">
+        
+                <label for="height">Висота:</label>
+                <input type="number" id="height" placeholder="Введіть висоту трапеції">
+            </div>
+        
+            <button onclick="calculateArea()">Обчислити площу</button>
+            <div id="area_result"></div>
+
+            <hr>
+
+            <h3>Завдання 3</h3>
+            <label for="number">Введіть натуральне число:</label>
+            <input type="number" id="number" placeholder="Введіть число">
+            <button onclick="calculateDivisors()">Знайти дільники</button>
+
+        </div>
+        <div class="slogan" id="slogan">Завдання 1</div>
+        <div class="right_panel" id="right_panel">
+            <h3>Завдання 4</h3>
+            <form>
+                <label>
+                    <input type="radio" name="caseType" value="uppercase"> Upper Case
+                </label>
+                <label>
+                    <input type="radio" name="caseType" value="lowercase"> Lower Case
+                </label>
+            </form>
+            
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque maiores quod, quibusdam quis necessitatibus iure, repudiandae voluptates maxime magni delectus velit voluptate et explicabo possimus fuga iusto nostrum libero tenetur.</p>
+        </div>
+        <footer>
+            
+            <div class="contacts">(050)-310-31-51 info@skypark.com.ua <a href="https://www.instagram.com/skypark.com.ua/" style="color: white;text-decoration: none;">@skypark.com.ua</a></div>
+            <div class="label" style="text-align: right;">пн-нд,  10-20</div>
+        </footer>
+    </div>
+    <script>
+        change_content();
+    </script>
+    </body>
+</html>
