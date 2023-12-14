@@ -1,0 +1,238 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.page{
+    min-height: 100%;
+    max-height: auto;
+    display: grid;
+    
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: minmax(20vh, auto) minmax(10vh, auto) 1fr minmax(10vh, auto) minmax(20vh, auto);
+
+    grid-template-areas: 
+    "header header header"
+    "menu title right-panel"
+    "menu main right-panel"
+    "slogan slogan right-panel"
+    "footer footer footer";
+}
+
+.logo{
+    font-size: large;
+    font-weight: bolder;
+
+    grid-column: 2/14;
+}
+
+.label{
+    font-weight: bolder;
+    background-color: #334234;
+    border-radius: 10px 0 10px 0;
+    padding: 15px;
+    color: white;
+    grid-column: 15/20;
+    width: fit-content; 
+    justify-self: end;
+}
+
+.contacts{
+    color:white;
+    word-spacing: 10em;
+
+    grid-column: 2/14;
+}
+
+header{
+    padding: 1%;
+    background-color: #252E26;
+    color:white; 
+
+    grid-area: header;
+
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    align-items: center;
+}
+
+footer{
+    padding: 1%;
+    background-color: #252E26; 
+    color:white;
+
+    grid-area: footer;
+
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    align-items: center;
+}
+
+.right_panel{
+    background-color: #39733E;
+    color: white;
+    
+    grid-area: right-panel;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.slogan{
+    background-color: #76BF7D;
+    line-height: 3;
+    font-style: italic;
+    font-size: large;
+    
+    grid-area: slogan;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu{ 
+    color: white;
+    background-color: #39733E;
+    line-height: 3;
+    text-align: center;
+    font-weight: bolder;
+
+    grid-area: menu;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.title{
+    background-color: #76BF7D;
+    font-size: xx-large;
+    text-transform: uppercase;
+
+    grid-area: title;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.content{
+    background-color: #7DCC85;
+    padding: 1%;
+    font-size: medium; 
+    
+    text-align: justify;
+
+    grid-area: main;
+
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+button{
+    margin: 1em;
+    padding: 0.5em;
+    background-color: #334234;
+    color:white;
+    border-radius: 5px 5px 5px 10px;
+    font-size: medium;
+    font-style: italic;
+}
+
+img {
+    max-width: 90%; 
+    height: auto; 
+}
+
+h3{
+    max-width: 100%; 
+    height: auto; 
+}
+
+a{
+    color: white; 
+    text-decoration: none;
+}
+
+hr{
+    width: 80%;
+    background-color: #76BF7D;
+    height: 3px;
+    border: none;
+}
+
+.masonry{
+    width: 100%;
+    margin: 0.5px auto;
+    columns: 3;
+    column-gap: 0.3em;
+}
+
+.masonry .box{
+    width: 100%;
+    margin-bottom: 0.2em;
+    break-inside: avoid;
+    text-align: center;
+}
+
+.masonry .box img{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+input{
+    margin: 1em;
+}
+
+@media screen and (max-width: 800px) {
+    .page{
+
+        grid-template-columns: 20% 25% 55%;
+        grid-template-rows: minmax(20vh, auto)  minmax(5vh, auto) 1fr  minmax(20vh, auto) minmax(20vh, auto);
+
+        grid-template-areas: 
+        "header header header"
+        "menu title title"
+        "menu main main"
+        "slogan slogan right-panel"
+        "footer footer footer";
+    }
+    
+    .right_panel{
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page{
+
+        grid-template-columns: 100%;
+        grid-template-rows: minmax(20vh, auto) minmax(20vh, auto) minmax(5vh, auto) 1fr minmax(5vh, auto) minmax(20vh, auto) minmax(20vh, auto);
+
+        grid-template-areas: 
+        "header"
+        "menu"
+        "title"
+        "main"
+        "slogan"
+        "right-panel"
+        "footer";
+    }
+    .right_panel{
+        padding: 2%;
+    }
+}

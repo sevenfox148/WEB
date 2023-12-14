@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 0.5em;
+}
+
+.container .box{
+    width: 100%;
+    margin-bottom: 0.2em;
+    break-inside: avoid;
+}
+
+.container .box img{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
