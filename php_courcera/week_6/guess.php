@@ -1,6 +1,6 @@
 <html>
 <body>
-<title> Anamitra Musib 0854be56 </title>
+<title> Семенова Єлизавета 0854be56 </title>
 <h1> Welcome to my guessing game</h1>
 
 <?php
